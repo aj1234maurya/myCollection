@@ -33,19 +33,7 @@ It's a Node.js and Express-based application that I've put together. For the bac
 
 ## Prerequisites
 
-npm i nodemon -g
-npm i ejs
-npm i express
-npm i mongoose
-npm i express-session
-npm cookie-parser
-npm i connect-flash
-npm i passport
-npm i passport-local
-npm i passport-local-mongoose
-npm i morgan
-npm i express-validator
-npm i uuid multer
+npm i nodemon ejs express mongoose express-session cookie-parser connect-flash passport passport-local passport-local-mongoose morgan express-validator uuid multer
 
 ## Getting Started
 
