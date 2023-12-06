@@ -4,7 +4,7 @@ const path = require("path");
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "/public/images/manhwa/");
+    cb(null, "./public/images/manhwa/");
   },
   filename: function (req, file, cb) {
     const uniqueFilename = uuidv4();
