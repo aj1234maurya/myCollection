@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="small-div">
+      <div id="container2">
+        <div class="top">
+          <h1>Sign Up Page</h1>
+        </div>
+        <form action="/register" method="post">
+          <input
+            class="input-space"
+            name="username"
+            type="text"
+            placeholder="UserName"
+            class="detail"
+          /><br />
+          <input
+            class="input-space"
+            name="email"
+            type="email"
+            placeholder="Email"
+            class="detail"
+          /><br />
+          <input
+            class="input-space"
+            name="password"
+            type="password"
+            placeholder="Password"
+            class="detail"
+          />
+          <input
+            class="input-space"
+            type="submit"
+            class="btn int"
+            value="Register"
+          />
+        </form>
+        <a href="/login" class="signup"> Already have an account ? </a>
+      </div>
+    </div>
+  </body>
+</html>

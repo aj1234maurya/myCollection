@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/profile.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      style="background-color: black !important"
+    >
+      <div class="container-fluid">
+        <img src="/images/2.png" alt="" height="80px" width="80px" />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="background-color: white !important"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse width-limit"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-link" href="/home">Home</a>
+            <a class="nav-link" href="/manhwa">Manhwa/Manhua/Manga</a>
+            <a class="nav-link" href="/webtoon">Webtoon</a>
+            <a class="nav-link" href="/web-novel">Web-Novel</a>
+            <a class="nav-link" href="/anime">Anime</a>
+            <a class="nav-link" href="/profile">Upload</a>
+            <a class="nav-link" href="/logout">Logout</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-not">
+      <div class="card-not">
+        <h3 class="username">Username:- @<%= user.username %></h3>
+        <a href="/logout" class="button">Logout</a>
+      </div>
+      <div id="big-div">
+        <div id="form-con">
+          <h3>Manhwa</h3>
+          <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" name="postType" value="manhwa" readonly />
+            <input type="text" name="postname" placeholder="Enter Name" />
+            <input type="url" name="url" placeholder="Enter Url" />
+            <input type="file" name="file" />
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+        <div id="form-con">
+          <h3>Webtoon</h3>
+          <form
+            action="/upload_webtoon"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <input type="text" name="postType" value="webtoon" readonly />
+            <input type="text" name="postname" placeholder="Enter Name" />
+            <input type="url" name="url" placeholder="Enter Url" />
+            <input type="file" name="file" />
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+        <div id="form-con">
+          <h3>Web-Novel</h3>
+          <form
+            action="/upload_webnovel"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <input type="text" name="postType" value="web-novel" readonly />
+            <input type="text" name="postname" placeholder="Enter Name" />
+            <input type="url" name="url" placeholder="Enter Url" />
+            <input type="file" name="file" />
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+        <div id="form-con">
+          <h3>Anime</h3>
+          <form
+            action="/upload_anime"
+            method="post"
+            enctype="multipart/form-data"
+          >
+            <input type="text" name="postType" value="anime" readonly />
+            <input type="text" name="postname" placeholder="Enter Name" />
+            <input type="url" name="url" placeholder="Enter Url" />
+            <input type="file" name="file" />
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
