@@ -33,35 +33,33 @@ It's a Node.js and Express-based application that I've put together. For the bac
 
 ## Prerequisites
 
---npm i nodemon -g
---npm i ejs
---npm i express
---npm i mongoose
---npm i express-session
---npm cookie-parser
---npm i connect-flash
---npm i passport
---npm i passport-local
---npm i passport-local-mongoose
---npm i morgan
---npm i express-validator
---npm i uuid multer
+1.  npm i nodemon -g
+2.  npm i ejs
+3.  npm i express
+4.  npm i mongoose
+5.  npm i express-session
+6.  npm cookie-parser
+7.  npm i connect-flash
+8.  npm i passport
+9.  npm i passport-local
+10. npm i passport-local-mongoose
+11. npm i morgan
+12. npm i express-validator
+13. npm i uuid multer
 
 ## Getting Started
 
---Clone the repository to your local machine:
---Open in vs code
---npm init
---Install dependencies
---Replace 'dburl' in the 'users.js' file with your MongoDB connection string
+1. Clone the repository to your local machine:
+2. Open in vs code
+3. npm init
+4. Install dependencies
+5. Replace 'dburl' in the 'users.js' file with your MongoDB connection string
 
 ## Run Application
 
---nodemon
+nodemon
 
 ## Screenshots
-
-I am attaching some Screenshots
 
 <!-- Register page  -->
 
